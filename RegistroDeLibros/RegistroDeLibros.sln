@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistroDeLibros", "RegistroDeLibros\RegistroDeLibros.csproj", "{77E4B5F7-EF7C-4F8B-9390-BA99901D1638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Front", "Front\Front.csproj", "{CC39C7B7-2D73-4B4F-B08B-CE2507A00BBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77E4B5F7-EF7C-4F8B-9390-BA99901D1638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E4B5F7-EF7C-4F8B-9390-BA99901D1638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E4B5F7-EF7C-4F8B-9390-BA99901D1638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E4B5F7-EF7C-4F8B-9390-BA99901D1638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC39C7B7-2D73-4B4F-B08B-CE2507A00BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC39C7B7-2D73-4B4F-B08B-CE2507A00BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC39C7B7-2D73-4B4F-B08B-CE2507A00BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC39C7B7-2D73-4B4F-B08B-CE2507A00BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5E754FE-044C-41F9-AFFE-071A0603F3EB}
+	EndGlobalSection
+EndGlobal

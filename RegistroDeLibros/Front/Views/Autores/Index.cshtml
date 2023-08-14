@@ -1,0 +1,50 @@
+﻿@model ModeloAutor
+
+<h2>Lista de Autores</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre Autor</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Autor in Model.ListaAutor)
+        {
+            <tr>
+                <td>@Autor.nombre</td>
+               
+            </tr>
+        }
+    </tbody>
+</table>
+<form asp-action="Index" method="get">
+    <div class="input-group mb-3">
+        <input type="text" name="searchString" class="form-control" placeholder="Buscar por título" />
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </div>
+</form>
+
+<h2>Registrar Nuevo Libro</h2>
+
+@using (Html.BeginForm("RegistrarAutor", "Autores", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+
+    <div class="form-group">
+ 
+    @Html.LabelFor(model => model.NuevoAutor.nombre, "Nombre")
+    @Html.TextBoxFor(model => model.NuevoAutor.nombre, new { @class = "form-control" })
+    @Html.LabelFor(model => model.NuevoAutor.fechaDeNacimeinto, "Fecha de Nacimiento")
+    @Html.TextBoxFor(model => model.NuevoAutor.fechaDeNacimeinto, new { @class = "form-control" })
+    @Html.LabelFor(model => model.NuevoAutor.ciudadDeProcedencia, "Ciudad")
+    @Html.TextBoxFor(model => model.NuevoAutor.ciudadDeProcedencia, new { @class = "form-control" })
+
+</div>
+
+
+    <button type="submit" class="btn btn-primary">Registrar</button>
+}

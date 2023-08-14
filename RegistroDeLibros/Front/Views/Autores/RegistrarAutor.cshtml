@@ -1,0 +1,18 @@
+﻿@using RegistroDeLibros.Models
+@model Autor
+
+<h2>Registrar Libro</h2>
+
+@using (Html.BeginForm("RegistrarAutor", "Autor", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.nombre)
+        @Html.TextBoxFor(model => model.nombre, new { @class = "form-control" })
+    </div>
+
+   
+
+    <button type="submit" class="btn btn-primary">Registrar</button>
+}
